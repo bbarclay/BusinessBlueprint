@@ -1,0 +1,206 @@
+.table-cv {
+	.table {
+		width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+        color: #00264c;
+        border-collapse: separate;
+        border-spacing: 15px 0;
+
+        @include maxv( 767) {
+        	table-layout: fixed;
+        	border-spacing: 5px 0;
+        }
+
+		tr {
+
+
+			&:nth-child(1)  {
+                  th {
+                  		border: 0;
+					    background: transparent;
+					    width: 33%;
+					    line-height: 1;
+					    border-top-right-radius: 5px;
+						border-top-left-radius: 5px;
+
+
+						.level {
+							color: #FFD700;
+							display: block;
+							font-size: 1.8em;
+
+							@include maxv( 992 ) {
+								font-size: 1.3em;
+							}
+							@include maxv( 600 ) {
+								font-size: 1em;
+							}
+							@include maxv( 480 ) {
+								font-size: 1em;
+							}
+
+						}
+						&:nth-child(1) {
+							@include maxv(768) {
+					        	width: 20% !important;
+					        }
+				   		}
+				   		&:nth-child(2) {
+							background: transparent;
+					        width: 10% !important;
+
+				   		}
+						&:nth-child(3) {
+					    	background: #084469;
+						    color: #fff;
+						    width: 25% !important;
+
+							@include maxv(768) {
+					        	width: 25% !important;
+					        }
+					        .sublevel { 
+				        		@include maxv(375) {
+				        			display: none;
+				        		}
+					        }
+						    .level { color: #FFD700; }
+					    }
+					    &:nth-child(4) {
+					    	background: #00254c;
+						    color: #fff;
+						    width: 25% !important;
+
+							@include maxv(768) {
+					        	width: 25% !important;
+					        }
+					        .sublevel { 
+				        		@include maxv(375) {
+				        			display: none;
+				        		}
+					        }
+						    .level { color: #e5e4e2; }
+					    }
+                  }
+			}
+			th {
+				padding: 30px 20px;
+			    text-transform: uppercase;
+			    font-family: $geogrotesqueM;
+			    font-size: 1.3em;
+			    border-left: 0;
+			    width: 40%;
+			    text-align: center;
+			    font-weight: normal;
+			    color: $navy;
+
+					@include maxv( 600 ) {
+						font-size: 1.1em;
+						padding: 10px;
+					}
+					@include maxv( 480 ) {
+						font-size: 1.1em;
+					}
+
+					td:nth-child(2) {
+					    background-color: transparent;
+					}
+			}
+
+			td {
+				border: 0;
+				&:nth-child(1) {
+				    position: relative;
+				    text-align: left;
+				    font-size: 1em;
+				    line-height: 1;
+				    cursor: pointer;
+				    padding: 1.2em 0 1.2em 0.4em;
+
+
+				    @include maxv( 992 ) {
+					 padding: 0.8em 0 0.8em 0.4em;
+				    }
+				    @include maxv( 600 ) {
+					 padding: 0.5em 0 0.5em 0.4em;
+				    }
+				    @include maxv( 480 ) {
+					 padding: 0.5em 0 0.5em 0.4em;
+				    }		
+				    a {
+				    	color: #5f5d5d;
+
+				    	.fa {
+				    		color: #a6a9ab;
+				    		font-size: 1.4em;
+    						width: 25px;
+    						float: left;
+    						display: block;
+    						margin-right: 10px;
+
+    						@include maxv(768) {
+
+							    width: 40px;
+							    text-align: center;
+							    border-radius: 5px;
+							    padding: 0.3em;
+							    border: 1px solid #d8d6d6;
+    						}
+				    	}
+				    }
+				    .title {
+				    	@include maxv(768) {
+				    		display: none;
+				    	}
+				    }
+				}
+				&:nth-child(3),
+				&:nth-child(4) {
+				    text-align: center;
+				    padding: 1.2em 0 1.2em 0.4em;
+					border-left: 1px solid #f3f3f3;
+    				border-right: 1px solid #f3f3f3;
+    				background: #fcfcfc;
+
+				    @include maxv( 992 ) {
+					 padding: 0.8em 0 0.8em 0.4em;
+				    }
+				    @include maxv( 600 ) {
+					 padding: 0.5em 0 0.5em 0.4em;
+				    }
+				    @include maxv( 480 ) {
+					 padding: 0.5em 0 0.5em 0.4em;
+				    }
+
+				}
+			} 
+			&:nth-child(even) {
+
+				td:nth-child(4) {
+			    	background: #fcfcfc;
+				}
+			}
+			&:last-child  {
+				td:nth-child(3),
+				td:nth-child(4) {
+					border-bottom: 1px solid #f3f3f3;
+					border-bottom-right-radius: 5px;
+					border-bottom-left-radius: 5px;
+				}
+			}
+			&:hover {
+				td:nth-child(1) {
+					background: #fcfcfc;
+				}
+				.fa-close, 
+				.fa-check {
+					font-size: 1.8em;
+
+					      
+				}
+
+
+			}
+		}
+	}
+}	

@@ -1,0 +1,615 @@
+/* -----------------------------------
+   MODULE HELPER
+---------------------------------- */
+
+/*========  BUTTON  =========*/
+.btn {
+   border: none;
+   color: $w;
+   text-transform: uppercase;
+   font-family: $geogrotesqueSB;
+   transition: all 0.5s ease;
+   font-size: 1.3rem;
+   min-width: 150px;
+   
+   &--orange {
+   	 	 background-color: $orange;
+   	 	 background: #f15d22 linear-gradient(to bottom, #f15d22 0, #cf4c0f 100%);
+   }
+   &--green {
+   	 	background-color: $green;
+   	 	background: #7AC143 linear-gradient(to bottom, #7ac143 0, #639c37 100%);
+   }
+   &--navy {
+   	 	background-color: $navy;
+   }
+   &:hover {
+	   	background: $navy;
+	   	border-bottom: none;
+	   	color: $w;
+   }
+}
+
+/*========  MARGIN =========*/
+.margin {
+	&--medium-top {
+		margin-top: 1.9em;
+        display: inline-block;
+
+		@include maxv(480) {
+			margin-top: 1.8em;
+		}	
+		.btn {
+			@include maxv(600) {
+		    	display: block;
+		    	margin-bottom: 0.5em;
+		    	max-width: 200px;
+		    }
+		}
+	 	
+	}
+	&--small-top {
+		margin-top: 2em;
+	}
+}
+
+/*========  PADDING  =========*/
+.cpad {
+	&--sm {
+		padding: 1em 0;
+	}
+}
+
+/*======== FORM =========*/
+.form-wrap {
+	padding: 0;
+    border-radius: 5px;
+	background: transparent;
+	form {			
+		label {
+				display: none;
+		}
+		.moonray-form-element-wrapper {
+			float: left;
+			padding: 5px;
+
+			@include minv(992) {
+				width: 20%;
+			}
+			@include maxv(992) {
+				width: 50%;
+			}
+			@include maxv(480) {
+				width: 100%;
+			}
+
+			&.moonray-form-input-type-submit {
+				@include maxv(992) {
+					width: 100%;
+				}
+			}
+			
+			&:after {
+			    clear: both;
+			    content: '';
+			    display: block;	
+			}
+
+			input, select {
+				width: 100%;
+			    height: 50px;
+			    margin: 0;
+			    padding: 0 10px;
+			    border-radius: 6px;
+			    font-family: inherit;
+			    font-size: 1rem;
+			    border: none;
+			    -webkit-box-shadow: inset 1px 1px 3px #d0cece;
+    			box-shadow: inset 1px 1px 3px #d0cece;
+
+    			
+			}
+  			input[type="submit"] {
+  				background-color: $orange;
+  				color: $w;
+  				font-size: 1.3rem;
+  				font-family: $geogrotesqueSB;
+  				box-shadow: none;
+				
+  				&:hover {
+  					background-color: $navy;
+  				}
+  			}
+		}
+		.moonray-form-input-type-hidden {
+			padding: 0;
+		}
+        .moonray-form-input-type-select {
+        	@include minv(1024) {
+				width: 22%;
+			}
+        }
+        .moonray-form-input-type-submit {
+        	@include minv(1024) {
+				width: 16%;
+			}
+        }
+		&:after {
+			clear: both;
+			content: '';
+			display: block;
+		}
+	}
+}
+
+/* -----------------------------------
+   CONTAINER DIV
+---------------------------------- */
+.hero {
+	background: url(assets/img/banner.jpg) no-repeat;
+	background-position: 0 0;
+	position: relative;
+	padding-top: 2em;
+	 @include minv (992) {
+	 	min-height: 450px;
+	 }
+	 @include maxv(1700) {
+ 			background-position: 47% 0;
+		    background-size: cover;
+	 }
+	 @include maxv(1500) {
+		    background-position: 47% 0;
+		    background-size: cover;
+	 }
+	 @include maxv(992) {
+	    background-position: 46% 0%;
+	    background-size: cover;
+	    position: relative;
+	    padding-top: 1.5em;
+	 }
+	 .margin--medium-top {
+	 	margin-top: 1.5em;
+	 }
+	 .hero {
+
+	 	&__heading {
+	 		text-align: right;
+
+	 		&--primary {
+	 			 h1 {
+	 			 	font-family: $geogrotesqueSB;
+	 			 	line-height: 1;
+	 			 	font-size: 3em;
+	 			 	text-transform: uppercase;
+	 				color: $w;
+	 				animation-delay: 2s;
+
+	 				@include maxv(768) {
+	 					font-size: 2em;
+	 				}	
+	 				@include maxv(600) {
+	 					font-size: 2.5em;
+	 				}
+	 				@include maxv(480) {
+	 					font-size: 2.2em;
+	 				}	
+	 				@include maxv(375) {
+	 					font-size: 1.5em;
+	 				}	
+	 				span {
+	 				  background: $orange;
+					  display: inline-block;
+	 				  margin-bottom: 0.1em;
+    				  padding: 5px;
+	 				}
+	 			}
+	 		}
+
+	 		&--secondary {
+	 			h2 {
+	 				display: inline-block;
+	 				font-family: $geogrotesque;
+	 				text-transform: uppercase;
+	 				font-size: 1.7em;
+    				margin-top: 1.5em;
+    				animation-delay: 2s;
+
+    				@include maxv(7992) {
+						margin-top: 1.5em;
+    				}
+	 				@include maxv(768) {
+	 					font-size: 1.5em;
+	 				}	
+	 				@include maxv(480) {
+	 					margin-top: 1.2em;
+	 					font-size: 1.4em;
+	 				}
+	 				@include maxv(375) {
+	 					margin-top: 1em;
+	 					font-size: 1.15em;
+	 				}
+	 				span {
+	 					display: inline-block;
+	 					padding: 2px 5px;
+	 					margin-bottom: 5px;
+	 					background-color: $navy;
+	 					color: $w;
+
+						@include maxv(480) {
+							display: inline;	
+						}
+	 					@include maxv(320) {
+						    font-size: 1em;
+						    display: inline;
+	 					}
+	 				}
+
+	 			}
+	 		}
+	 		
+	 	}
+
+	 	@keyframes animateRight {
+	 		from {
+                margin-right: -200px;
+                visibility: hidden;
+	 			opacity: 0;
+	 		}
+	 		to {
+				margin-right: 0px;
+				visibility: visible;
+	 			opacity: 1;
+	 		}
+	 	}
+
+	 }
+
+}
+.signup-form {
+	background-color: $green;
+ 	.heading {
+ 		margin-bottom: 0;
+
+ 		h2 {
+ 			margin-bottom: 0;
+	 		color: $w;
+	 		font-size: 2.5em;
+	 		font-family: $geogrotesqueM;
+	 		line-height: 1;
+	 		text-transform: uppercase;
+
+	 		@include maxv(768) {
+	 			font-size: 2em;
+	 		}
+	 		span,
+	 		strong {
+	 			color: $navy;
+	 			font-family: $geogrotesqueSB;
+	 		}
+ 		}
+ 		p {
+ 			font-family: $shadow;
+ 			font-size: 1.8em;
+ 			color: $w;
+ 			margin-bottom: 10px;
+
+ 			@include maxv(768) {
+	 			font-size: 1.5em;
+	 		}
+ 		}
+ 	}
+
+}
+
+.promotions {
+	position: relative;
+	background-color: $gb;
+	background: url(assets/img/52ways-bg.jpg) no-repeat;
+	background-position: 0 -230px;
+    background-size: cover;
+	overflow: hidden;
+	padding-top: 0;
+	min-height: 500px;
+
+    @include maxv(1500) {
+		background-position: 0 0;
+   }
+	@include maxv(992) { 
+		background-position: 0 0;
+	}
+	@include maxv(768) { 
+		background-position: 0 0;
+	}
+	@include maxv(375) { 
+        background-position: 0 0;
+        min-height: auto;
+
+	}
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(246, 246, 247, 0.5);
+		z-index: 1;
+	}
+	.site-logo {
+		font-family: 'Avenir-Light', sans-serif;
+    	margin: 0 0 2em 0;
+    	max-width: 100%;
+    	font-size: 1.3em;
+
+		@include maxv(375) {
+			font-size: 1em;
+		}
+		img {
+			width: 230px;
+			margin-right: 10px;
+
+			@include maxv(768) { 
+			  max-width: 250px;;
+			}
+			@include maxv(600) { 
+              max-width: 250px;
+			}
+			@include maxv(480) { 
+              max-width: 200px;
+			}
+			@include maxv(375) { 
+                max-width: 200px;
+		    }
+		    @include maxv(320) { 
+                max-width: 180px;
+                margin-top: 5px;
+		    }
+		}
+	}
+	.container {
+		position: relative;
+		z-index: 3;
+
+		.content {
+			position: relative;
+			z-index: 1;
+			
+			@include minv(992) {
+				width: 50%;
+				padding: 4em 0 1em 0;
+			}
+			@include maxv(768) {
+				width: 60%;
+			}
+			@include maxv(480) {
+				width: 60%;
+				margin-top: 1em;
+			}
+			@include maxv(375) { 
+				width: 95%;
+			}
+			@include maxv(320) { 
+				width: 70%;
+			}
+		    .logo {
+		    	width: 100%;
+				max-width: 500px;
+
+				@include maxv(768) { 
+					max-width: 400px;
+				}
+				@include maxv(768) { 
+					max-width: 400px;
+				}
+				@include maxv(375) { 
+	                max-width: 180px;
+	                margin: 0;
+			    }
+			}
+			.heading {
+				margin-top: 1em;
+
+				h3 {
+					font-size: 2.2em;
+					color: $navy;
+					font-family: 'Avenir LT W01_95 Black1475556', sans-serif;
+    				font-weight: bold;
+
+					@include maxv(768) { 
+					  font-size: 1.8em;
+					}
+					@include maxv(600) { 
+		               font-size: 1.3em;
+					}
+					@include maxv(480) { 
+		               font-size: 1.2em;
+					}
+					@include maxv(375) { 
+		              font-size: 1.1em;
+				    }
+				}
+			}
+			.media-logo  { 
+				img {
+				    margin-top: 2em;
+				    margin-bottom: 1em;
+				    max-width: 95%;
+
+	
+				  @include maxv(992) { 
+					  margin: 1em 0 0.5em 0;
+		              max-width: 60%;
+					}
+					@include maxv(768) { 
+					  margin: 1em 0 0.5em 0;
+		              max-width: 90%;
+					}
+					@include maxv(600) { 
+		              max-width: 90%;
+					}
+					@include maxv(480) { 
+		              max-width: 85%;
+					}
+				    @include maxv(375) { 
+				      margin: 0.5em 0;
+		              max-width: 180px;
+				    }
+				   @include maxv(320) { 
+						display: none;
+					}
+				}
+			}
+
+			.btn {
+				@include maxv(600) { 
+					margin-bottom: 0.2em;	
+				}
+				@include maxv(375) { 
+					min-width: 120px;
+					margin-bottom: 10px;
+					font-size: 1rem;
+					display: block;
+				}
+			}
+			
+		}
+		.alignleft {
+			@include maxv(375) {
+				margin-bottom: 0;
+			}
+		}	
+		.dale-image {
+		    position: absolute;
+		    bottom: 0;
+		    width: 100%;
+		    max-width: 500px;
+		    right: -30px;
+			z-index: -1;
+			margin-top: 2rem;
+
+
+			@include maxv(992) { 
+				max-width: 400px;
+                right: -80px;
+			}
+			@include maxv(768) { 
+				max-width: 400px;
+                right: -65px;
+                top: 0;
+			}
+			@include maxv(600) { 
+
+				max-width: 385px;
+                right: -90px;
+			}
+			@include maxv(480) { 
+		        max-width: 380px;
+                right: -90px;
+			}
+		    @include maxv(375) { 
+                max-width: 250px;
+                right: -80px;
+                margin-top: 5rem;
+		    }
+		}
+		
+	}
+}
+
+
+.featured-blogs {
+	padding: 4em 0;
+
+   @include maxv(600) {
+		padding: 2em 0 1em 0;
+	}
+	@include maxv(480) {
+		padding: 2em 0 1em 0;
+	}
+	background-color: #f6f6f7;
+	h3 {
+		position: relative;
+		margin-bottom: 0.5em;
+		padding-bottom: 0.4em;
+		text-align: center;
+		font-size: 2.5em;
+		font-family: $geogrotesqueSB;
+        text-transform: uppercase;
+
+        span {
+        	color: $lightblue;
+        } 
+	}
+
+	.blog {
+		margin-bottom: 2em;
+		background: $w;
+		border: 1px solid #f9f9f9;
+		overflow: hidden;
+		font-size: 20px;
+		box-shadow: 0 1px 6px #e6e4e4;
+
+		.entry-image {
+			overflow: hidden;
+			position: relative;
+			transition: all 0.8s ease;
+			
+			img {
+				width: 100%;
+				height: auto;
+				transition: all 0.8s ease;
+			}
+			
+			
+		}
+		.entry-title {
+			border-bottom: 1px solid #f5f5f5;
+			padding: 1.2em 0.8em;
+			text-align: center;
+
+			@include maxv(600) {
+  				padding: 1em 0.8em;
+			}
+			h4 {
+				margin-bottom: 0;
+				font-size: 1.4em;
+				font-family: $geogrotesqueSB;
+				text-align: left;
+				min-height: 70px;
+				
+				@include maxv(992) {
+  					font-size: 1.2em;
+				}
+				@include maxv(600) {
+  					font-size: 1em;
+				}
+
+			}
+		}
+		.entry-meta {
+			padding: 0.8em 1em;
+			font-family: $geogrotesqueL;
+			font-size: 0.8em;
+			color: $navy;
+
+			span {
+				float: left;
+				width: 40%;
+				
+				@include maxv(600) {
+  					font-size: 1em;
+				}
+			}
+			.comments {
+				margin: 0;
+				float: right;
+				width: 60%;
+				text-align: right;
+			}
+		}
+	}
+
+	a {
+		text-decoration: none;
+	}
+}

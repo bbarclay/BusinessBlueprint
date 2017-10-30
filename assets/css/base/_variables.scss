@@ -1,0 +1,86 @@
+// ----------------------------------------------------------------------
+	// Layout Breakpoints
+// ----------------------------------------------------------------------
+$maxWidth: 1280;
+
+
+// ----------------------------------------------------------------------
+	// Colors
+// ----------------------------------------------------------------------
+$c1 		: #dedede;
+$c2 		: #292929;
+
+$w			: #ffffff;
+$white		: #ffffff;
+$b			: #000000;
+$gb			: #686868;
+$g  		: #35ad68;
+$y			: #FFFDD2;
+
+$orange      : #f15d22;
+$orange2     : #f47d44;
+
+$green		 : #79c142;
+$green2		 : #94cb64;
+
+$navy		 : #00254c;
+$navy2		 : #084469;
+
+$blue		 : rgb(0, 118, 192);
+$lightblue 	 : rgb(0,188, 288);
+
+
+// ----------------------------------------------------------------------
+	// Font Sizes
+// ----------------------------------------------------------------------
+$regularSize: 12;
+
+
+// ----------------------------------------------------------------------
+	// Font Families
+// ----------------------------------------------------------------------
+$helvetica: Helvetica, Arial, sans-serif;
+$geogrotesqueSB : 'Geogrotesque-SemiBold', sans-serif;
+$geogrotesqueB : 'Geogrotesque-Bold', sans-serif;
+$geogrotesqueM : 'Geogrotesque-Medium', sans-serif;
+$geogrotesqueL : 'Geogrotesque-Light', sans-serif;
+$geogrotesqueRI : 'Geogrotesque-RegularIt', sans-serif;
+$geogrotesque : 'Geogrotesque', sans-serif;
+
+
+
+$shadow : 'Shadows Intro Light', sans-serif;
+
+$PTSans : 'PTSans', sans-serif;
+
+$adelle : 'Adelle-Regular', sans-serif;
+
+$bigcap : $geogrotesqueSB;
+
+@include fontface('Avenir-Light', 'assets/fonts/Avenir', 'Avenir-Light');
+@include fontface('Avenir-Medium', 'assets/fonts/Avenir', 'Avenir-Medium');
+@include fontface('Avenir-Heavy', 'assets/fonts/Avenir', 'Avenir-Heavy');
+
+
+
+
+// ----------------------------------------------------------------------
+  // Grid
+// ----------------------------------------------------------------------
+$grid-columns: 12;
+
+
+
+// ----------------------------------------------------------------------
+  // Custom Margin
+// ----------------------------------------------------------------------
+
+.mt05 {
+  margin-top: 5em;
+ }
+.mt10 {
+  margin-top: 10em;
+}
+.mt20 {
+   margin-top: 20em;
+ }

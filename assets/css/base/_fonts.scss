@@ -1,0 +1,47 @@
+// ----------------------------------------------------------------------
+	// Font Families
+// ----------------------------------------------------------------------
+
+//Georgrotesque
+
+@include fontface('Geogrotesque-Regular', 'assets/fonts/dale-fonts', '2705D8_8_0');
+@include fontface('Geogrotesque-Bold', 'assets/fonts/dale-fonts', '2705D8_5_0');
+@include fontface('Geogrotesque-Light', 'assets/fonts/dale-fonts', '2705D8_6_0');
+@include fontface('Geogrotesque-Medium', 'assets/fonts/dale-fonts', '2705D8_7_0');
+@include fontface('Geogrotesque-SemiBold', 'assets/fonts/dale-fonts', '2705D8_9_0');
+@include fontface('Geogrotesque-RegularIt', 'assets/fonts/dale-fonts', '2705D8_D_0');
+/*@include fontface('Geogrotesque-UltraLight', 'assets/fonts/dale-fonts', '2705D8_B_0');
+@include fontface('Geogrotesque-ThinIt', 'assets/fonts/dale-fonts', '2705D8_C_0');
+@include fontface('Geogrotesque-RegularIt', 'assets/fonts/dale-fonts', '2705D8_D_0');
+@include fontface('Geogrotesque-UltraLightIt', 'assets/fonts/dale-fonts', '2705D8_E_0')*/;
+
+
+/*@include fontface('Geogrotesque-BoldIt', 'assets/fonts/dale-fonts', '2705D8_F_0');
+@include fontface('Geogrotesque-LightIt', 'assets/fonts/dale-fonts', '2705D8_10_0');
+@include fontface('Geogrotesque-MediumIt', 'assets/fonts/dale-fonts', '2705D8_11_0');
+@include fontface('Geogrotesque-SemiBoldIt', 'assets/fonts/dale-fonts', '2705D8_12_0');*/
+
+@include fontface('Adelle-Bold', 'assets/fonts/dale-fonts', '270277_0_0');
+/*@include fontface('Adelle-BoldItalic', 'assets/fonts/dale-fonts', '270277_1_0');
+@include fontface('Adelle-ExtraBold', 'assets/fonts/dale-fonts', '270277_2_0');
+@include fontface('Adelle-ExtraBoldItalic', 'assets/fonts/dale-fonts', '270277_3_0');
+@include fontface('Adelle-Heavy', 'assets/fonts/dale-fonts', '270277_4_0');
+@include fontface('Adelle-HeavyItalic', 'assets/fonts/dale-fonts', '270277_5_0');
+@include fontface('Adelle-Italic', 'assets/fonts/dale-fonts', '270277_6_0');
+@include fontface('Adelle-Light', 'assets/fonts/dale-fonts', '270277_7_0');
+@include fontface('Adelle-LightItalic', 'assets/fonts/dale-fonts', '270277_8_0');*/
+@include fontface('Adelle-Regular', 'assets/fonts/dale-fonts', '270277_9_0');
+/*@include fontface('Adelle-SemiBold', 'assets/fonts/dale-fonts', '270277_A_0');
+@include fontface('Adelle-SemiBoldItalic', 'assets/fonts/dale-fonts', '270277_B_0');
+@include fontface('Adelle-Thin', 'assets/fonts/dale-fonts', '270277_C_0');
+@include fontface('Adelle-ThinItalic', 'assets/fonts/dale-fonts', '270277_D_0');*/
+
+
+
+
+@include fontface('PTSans', 'assets/fonts/PT-Sans', 'PTSans-Regular');
+@include fontface('Shadows Intro Light', 'assets/fonts/shadow', 'ShadowsIntoLight');
+
+@include fontface('Viva', 'assets/fonts/viva', 'VivaBeautifulCaps-Regular');
+
+/*@import "assets/fonts/Genericons/genericons";*/

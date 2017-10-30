@@ -1,0 +1,163 @@
+/* -----------------------------------
+   MODULE HELPER
+---------------------------------- */
+.menu {
+	&--social {
+		margin-bottom: 0.6em;
+		li {
+			margin-right: 0.2em
+		}
+		a {
+			content: '\f408';
+		    display: block;
+		    font-size: 16px;
+		    font-family: 'genericons';
+		    color: #00264c;
+		    background: #FFF;
+		    border-radius: 50%;
+		    width: 22px;
+		    line-height: 22px;
+		    text-align: center;
+		    transition: all 150ms ease-out;
+
+		    &:hover {
+		    	background: $orange;
+		    }
+		}
+		a[href*='facebook.com']:before {
+		  content: '\f204';
+		}
+		a[href*='youtube.com']:before {
+		  content: '\f213';
+		}
+		a[href*='twitter.com']:before {
+		  content: '\f202';
+		}
+		a[href*='instagram.com']:before {
+		  content: '\f215';
+		}
+		a[href*='linkedin.com']:before {
+		  content: '\f207';
+		}
+		a[href*='google.com']:before {
+		  content: '\f218';
+		}
+		a[href*='flickr.com']:before {
+		  content: '\f211';
+		}
+		a[href*='pinterest.com']:before {
+		  content: '\f209';
+		}
+	}
+}
+
+/* -----------------------------------
+   FOOTER
+---------------------------------- */
+.single {
+	.footer-form {
+		.form-wrap {
+			background: transparent !important;
+		    margin-bottom: 0;
+		}
+	}
+}
+.site-footer {
+	padding-top: 3em;
+	background: $navy;
+	color: $w;
+	font-family: $geogrotesque;
+
+	.pad-right {
+		@include minv(1024) {
+	    	padding-right: 4em;
+		}
+	}
+	.footer-logo {
+		margin-bottom: 2em;
+	}
+	.description {
+		font-family: $geogrotesqueRI;
+
+		a {
+			color: $w;
+		}
+	}
+	.menu {
+		&--footer {
+			@include maxv(992) {
+				margin: 1em 0;
+			}
+			li {
+				font-family: $geogrotesqueSB;
+				text-transform: uppercase;
+
+				@include minv(992) {
+					margin-bottom: 0.2em;
+					display: block;
+				}
+				@include maxv(992) {
+					display: inline-block;
+				}
+				a {
+					padding: 0 .3em;
+    				background: $lightblue;
+    				font-size: 1.1em;
+    				color: $w;
+
+    				&:hover {
+    					text-decoration: none;
+    					background: $orange;
+    				}
+				}
+			}
+		}
+
+		&--social {
+		   li {
+		   	  display: inline-block;
+		   }
+		}
+		&--fine {
+			display: inline-block;
+			li {
+				display: inline-block;
+				a {
+					color: $w;
+				}
+			}
+		}
+	}
+	.tagline {
+		position: relative;
+		padding-top: .8em;
+	    margin-bottom: .3em;
+	    padding-bottom: .3em;
+	    border-bottom: 2px dotted rgba(255,255,255,.6);
+	    font-family: $geogrotesque;
+	    font-size: 1.25em;
+	}
+	.copyright {
+		margin-bottom: 3em;
+
+		.menu-item {
+		   &:before {
+		     
+		   }
+		}
+		li {
+			a {
+				&:hover,
+				&:focus {
+					text-decoration: none;
+					color: $orange;
+				}
+			}
+		}
+	}
+	.facebook-feed {
+		a {
+			color: $lightblue;
+		}
+	}
+}
