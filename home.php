@@ -15,7 +15,7 @@
 					<div class="col-md-4 hidden-sm hidden-xs">
 						<aside class="sidebar" role="complementary" itemscope itemprop="http://schema.org/WPSideBar">
 							<?php dynamic_sidebar( 'sidebar' ); ?>
-							<div class="form" style="height: 400px;background: #fff;">test</div>
+
 						</aside>
 					</div>
 					<div class="col-md-8">
