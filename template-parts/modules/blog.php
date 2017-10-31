@@ -40,7 +40,7 @@
 												<?php if( has_post_thumbnail() ) : ?>
 
 													<div class="img_wrap">		
-														<?php the_post_thumbnail( 'post-thumbnail-2', array( 'class' => 'entry__image', 'itemprop' => 'image' ) ); ?>
+														<?php the_post_thumbnail( 'featured-image', array( 'class' => 'entry__image', 'itemprop' => 'image' ) ); ?>
 													</div>
 
 												<?php endif; 
