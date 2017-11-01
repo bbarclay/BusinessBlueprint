@@ -90,6 +90,8 @@ function my_deregister_javascript()
         wp_deregister_style( 'mashnet-styles' ); 
         wp_deregister_style( 'mashnet' );
         wp_deregister_style( 'page-list-style' );
+        wp_deregister_style( 'cascade-google-fonts' );
+        wp_deregister_style( 'mrjswp' );
       } 
  } 
 
