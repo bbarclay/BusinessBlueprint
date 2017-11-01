@@ -86,6 +86,8 @@ function my_deregister_javascript()
         wp_deregister_style( 'contact-form-7' );
         wp_deregister_style( 'symple_shortcode_styles' );
         wp_deregister_style( 'mashsb-styles' ); 
+        wp_deregister_style( 'fbmsg-css' ); 
+        wp_deregister_style( 'mashnet-styles' ); 
         wp_deregister_style( 'page-list-style' );
       } 
  } 
