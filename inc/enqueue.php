@@ -72,3 +72,20 @@ add_action( 'wp_enqueue_scripts', 'bb_styles', 11);
 add_action( 'wp_enqueue_scripts', 'bb_scripts');
 add_action( 'wp_enqueue_scripts', 'bb_enqueue_comments_reply' );
 add_action( 'wp_print_scripts', 'bb_deregister_javascript');
+
+
+add_action( 'wp_print_styles', 'my_deregister_javascript', 9999 );
+
+function my_deregister_javascript() 
+ { 
+    if ( is_front_page() ) 
+      {
+        
+        wp_deregister_style( 'speechkit' );
+        wp_deregister_style( 'cff' );
+        wp_deregister_style( 'contact-form-7' );
+        wp_deregister_style( 'symple_shortcode_styles' );
+        wp_deregister_style( 'mashsb-styles' ); 
+        wp_deregister_style( 'page-list-style' );
+      } 
+ } 
