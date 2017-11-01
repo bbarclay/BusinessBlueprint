@@ -92,6 +92,9 @@ function my_deregister_javascript()
         wp_deregister_style( 'page-list-style' );
         wp_deregister_style( 'cascade-google-fonts' );
         wp_deregister_style( 'mrjswp' );
+
+        wp_deregister_style( 'mrcss' );
+        wp_deregister_style( 'jqcss' );
       } 
  } 
 
