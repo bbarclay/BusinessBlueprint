@@ -20,7 +20,7 @@ function bb_scripts()
         wp_register_script('bb_vendorsJs', get_stylesheet_directory_uri() . '/assets/js/vendors.min.js', array(), '1.0.0', true); // Custom scripts
         wp_enqueue_script('bb_vendorsJs'); // Enqueue it!
 
-        wp_register_script('bb_customJs', get_stylesheet_directory_uri() . '/assets/js/custom.js', array(), '1.0.0', true); // Custom scripts
+        wp_register_script('bb_customJs', get_stylesheet_directory_uri() . '/assets/js/custom.min.js', array(), '1.0.0', true); // Custom scripts
         wp_enqueue_script('bb_customJs'); // Enqueue it!
 
     }
