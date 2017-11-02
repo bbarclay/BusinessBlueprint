@@ -128,7 +128,7 @@
                                 </div>  
                                <!--  <h2>2017 FastTrack Calendar</h2> -->
                                 <div class="option-btn">
-                                  <a href="" class="btn btn-orange">Open</a>
+                                  <a href="https://business-blueprint.s3.amazonaws.com/Magalogs/BB%202017%20Magalog_FINAL_OPTIMIZED_ONLINE.pdf" class="btn btn-orange" target="_blank">Open</a>
                                   <a href="https://business-blueprint.s3.amazonaws.com/Magalogs/BB%202017%20Magalog_FINAL_OPTIMIZED_ONLINE.pdf" class="btn btn-green" target="_blank" download>Download</a>
                                 </div>
                             </div>

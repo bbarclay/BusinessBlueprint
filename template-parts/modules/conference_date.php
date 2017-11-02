@@ -163,7 +163,7 @@
                   </div>
                   <!-- <h2>2018 FastTrack Calendar</h2> -->
                   <div class="option-btn">
-                    <a href="" class="btn btn-orange">Open</a>
+                    <a href="https://businessblueprint.com.au/wp-content/uploads/2017/10/BB-2018-Fast-Track-Calendar.pdf" class="btn btn-orange" target="_blank">Open</a>
                     <a href="https://businessblueprint.com.au/wp-content/uploads/2017/10/BB-2018-Fast-Track-Calendar.pdf" class="btn btn-green" target="_blank" download>Download</a>
                   </div>
             </div>

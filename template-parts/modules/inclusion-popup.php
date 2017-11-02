@@ -35,9 +35,9 @@
                                         $description = get_sub_field('description');
                                         $type = get_sub_field('membership_type');
 
-                                        $col = ($type == 'Platinum') ? 'item3col ' : 'item4col ';
+                                        $col = ($type == 'Gold') ? 'item3col ' : 'item4col ';
                             ?> 
-                                            <div class="item <?php echo $col; ?>" popnum='<?php echo $count; ?>'>
+                                            <div class="item <?php echo $col; ?>" popnum='<?php echo get_sub_field('unique_id'); ?>'>
                                                  
                                                   <?php 
                                                     if($svg) {
@@ -84,7 +84,7 @@
                     ?> 
 
 
-                                  <div id="popup<?php echo $count; ?>" class="overlay">
+                                  <div id="popup<?php echo get_sub_field('unique_id') ?>" class="overlay">
                                     <div class="popup">
                                             <h2><?php echo $title ?></h2>
                                             <span class="close" >&times;</span>
