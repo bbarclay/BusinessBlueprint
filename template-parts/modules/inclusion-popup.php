@@ -88,8 +88,10 @@
                                     <div class="popup">
                                             <h2><?php echo $title ?></h2>
                                             <span class="close" >&times;</span>
-                                            <div class="content">
-                                                <?php echo $description ?>
+                                            <div class="scrolling">
+                                                <div class="content">
+                                                    <?php echo $description ?>
+                                                </div>
                                             </div>
                                         </div>
                                   </div>
@@ -108,6 +110,20 @@
    
     <script>
         (function($){
+
+            $('.overlay').on('click', function(e){
+            
+                var open_overlay = $('.overlay').hasClass('open');
+                var popup = $('.open > .popup');
+
+                console.log(e.target);    
+                if( open_overlay && popup != e.target) {
+                    popup.addClass('active');
+                    $('.overlay').removeClass('open');
+                }
+            })
+
+
             $('.inclusions .item').on('click', function(){
                 var popnum = $(this).attr('popnum');
                        
@@ -122,6 +138,8 @@
                     $('.overlay').removeClass('open');
                 }
             });
+
+
         })(jQuery);
 
     </script>

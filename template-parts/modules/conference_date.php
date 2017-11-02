@@ -158,14 +158,28 @@
 
             
             <div class="lead c-download">
+                 <?php 
+
+                    $img = get_sub_field('calendar_image');
+                    $dl = get_sub_field('image_download_link');
+
+                 if($img) : ?>
+
+
                   <div class="image">
-                  <img src="https://businessblueprint.com.au/wp-content/uploads/2017/10/calendar2.jpg" />
+                     <img src="<?php echo $img['url'] ?>" alt="<?php echo $img['title'] ?>" />
                   </div>
-                  <!-- <h2>2018 FastTrack Calendar</h2> -->
+                 <?php 
+ 
+                  endif;
+                 ?>
+
+                  <?php if($dl) : ?>
                   <div class="option-btn">
-                    <a href="https://businessblueprint.com.au/wp-content/uploads/2017/10/BB-2018-Fast-Track-Calendar.pdf" class="btn btn-orange" target="_blank">Open</a>
-                    <a href="https://businessblueprint.com.au/wp-content/uploads/2017/10/BB-2018-Fast-Track-Calendar.pdf" class="btn btn-green" target="_blank" download>Download</a>
+                    <a href="<?php echo $dl;?>" class="btn btn-orange" target="_blank">Open</a>
+                    <a href="<?php echo $dl; ?>" class="btn btn-green" target="_blank" download>Download</a>
                   </div>
+                <?php endif; ?>
             </div>
            
 
