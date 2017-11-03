@@ -50,30 +50,26 @@
                               <td class="item"><?php echo get_sub_field('platinum_pricing') ?></td>
                            </tr>
                          <?php endif; ?>
+                         <?php 
+                             if( have_rows('computation') ) :
+                                  
 
-                         <tr class="slim-pd">
-                           <td colspan="2"><span class="text">MY TOTAL VALUE</span></td>
-                           <td><span class="amount amount-md">$60,940</span></td>
-                           <td class="no-bg custom-text">$153,420</td>
-                         </tr>
+                                      while( have_rows('computation') ) : the_row();
 
-                         <tr class="slim-pd">
-                           <td colspan="2"><span class="text">SINGLE INVESTMENT & GET 2 MONTHS FREE (Save $1745)</span></td>
-                           <td><span class="amount amount-md text-dominant">$9,995</span></td>
-                           <td class="no-bg custom-text"><span class="text-dominant">$14,995</span></td>
-                         </tr>
+                                      $h_color = get_sub_field('hightlight_color');
 
-                         <tr class="slim-pd">
-                           <td colspan="2"><span class="text">OR... Only 12 Easy monthly instalment</span></td>
-                           <td><span class="amount amount-md text-dominant">$995</span></td>
-                           <td class="no-bg custom-text"><span class="text-dominant">$1495</span></td>
-                         </tr>
+                                          echo '<tr class="slim-pd">';
+                                    ?>
 
-                         <tr class="slim-pd">
-                           <td colspan="2"><span class="text">My Total Saving</span></td>
-                           <td><span class="amount amount-md">$50,945</span></td>
-                           <td class="no-bg custom-text">$138,425</td>
-                         </tr>
+                                    <td colspan="2"><span class="text"><?php echo get_sub_field('text') ?></span></td>
+                                    <td><span class="amount amount-md <?php ($h_color) ? 'text-dominant' : ''; ?>"><?php echo get_sub_field('gold_value') ?> </span></td>
+                                    <td class="no-bg custom-text"><?php echo get_sub_field('platinum_pricing') ?></td>
+                                    <?php
+                                         echo '</tr>';
+                                       endwhile;
+                                 
+                              endif;
+                         ?>
 
                   </tbody>
 
