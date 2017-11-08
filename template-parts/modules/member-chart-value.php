@@ -63,7 +63,7 @@
 
                                     <td colspan="2"><span class="text"><?php echo get_sub_field('text') ?></span></td>
                                     <td><span class="amount amount-md <?php ($h_color) ? 'text-dominant' : ''; ?>"><?php echo get_sub_field('gold_value') ?> </span></td>
-                                    <td class="no-bg custom-text"><?php echo get_sub_field('platinum_pricing') ?></td>
+                                    <td class="no-bg custom-text"><span><?php echo get_sub_field('platinum_pricing') ?></span></td>
                                     <?php
                                          echo '</tr>';
                                        endwhile;

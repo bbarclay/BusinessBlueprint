@@ -1,12 +1,22 @@
-      <section class="inclusions">
+<section class="inclusions" id="inc-first">
         <div class="container">
-            <?php if( have_rows('inclusions') ) : 
+            <?php
+               $no_of_item = 0;
+
+               if( have_rows('inclusions') ) : 
+
+                      
 
                        while( have_rows('inclusions') ) : the_row();
 
                                     $heading = get_sub_field('heading');
                                     $subheading = get_sub_field('subheading');
 
+
+                                    $no_of_item++;
+                                    $item =  ($no_of_item == 2) ?  'grid-4col' : 'grid-3col';
+
+                             echo '<div class="inclusion-wrapper ' .  $item . '">';         
 
                         ?>
                             <?php if( $heading ) : ?>
@@ -16,11 +26,14 @@
                             
                                  if( $subheading ) :
                             ?>    
-                                   <p class="textright"><?php echo $subheading; ?></p>
+                                   <p class="textcenter"><?php echo $subheading; ?></p>
                             <?php 
                                  endif;  
 
+                                
+
                                  if( have_rows('items') ) :
+                                    
 
                                     $count = 0;
 
@@ -37,16 +50,18 @@
 
                                         $col = ($type == 'Gold') ? 'item3col ' : 'item4col ';
                             ?> 
-                                            <div class="item <?php echo $col; ?>" popnum='<?php echo get_sub_field('unique_id'); ?>'>
+                                            <div class="item <?php echo $col; ?>" data-toggle="modal" data-target="#Modal-<?php echo get_sub_field('unique_id'); ?>">
                                                  
                                                   <?php 
                                                     if($svg) {
-                                                        echo '<i class="' . $svg . ' fa-4x"></i>'; 
+                                                        echo '<i class="' . $svg . ' fa-3x"></i>'; 
                                                     }
 
                                                   ?>  
-                                                  <span><?php echo $title; ?></span>
-
+                                                  <div class="text">
+                                                      <span class="title"><?php echo $title; ?></span>
+                                                     
+                                                  </div>
                                             </div>
                                             
                             <?php 
@@ -55,6 +70,7 @@
 
                                  endif; ?>
                         <?php 
+                              echo '</div>';
                        endwhile; 
                   endif; ?>
 
@@ -84,10 +100,11 @@
                     ?> 
 
 
-                                  <div id="popup<?php echo get_sub_field('unique_id') ?>" class="overlay">
+                                  <div class="modal fade" id="Modal-<?php the_sub_field('unique_id'); ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                     <div class="popup">
                                             <h2><?php echo $title ?></h2>
-                                            <span class="close" >&times;</span>
+                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
                                             <div class="scrolling">
                                                 <div class="content">
                                                     <?php echo $description ?>
@@ -108,38 +125,4 @@
 
          endif; ?>
    
-    <script>
-        (function($){
 
-            $('.overlay').on('click', function(e){
-            
-                var open_overlay = $('.overlay').hasClass('open');
-                var popup = $('.open > .popup');
-
-                console.log(e.target);    
-                if( open_overlay && popup != e.target) {
-                    popup.addClass('active');
-                    $('.overlay').removeClass('open');
-                }
-            })
-
-
-            $('.inclusions .item').on('click', function(){
-                var popnum = $(this).attr('popnum');
-                       
-                $('#popup' + popnum).addClass('open');
-
-            });
-
-
-            $('.overlay .close').on('click', function(){
-
-                if( $('.overlay').hasClass('open') ) {
-                    $('.overlay').removeClass('open');
-                }
-            });
-
-
-        })(jQuery);
-
-    </script>

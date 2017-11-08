@@ -69,6 +69,7 @@ $(document).ready(function(){
 						//.addIndicators({name: "2 (duration: 0)"}) // add indicators (requires plugin)
 						.addTo(controller);
 
+   
 				// 		var contain =  $('.events').height();
     // new ScrollMagic.Scene({triggerElement: ".events", duration: contain, triggerHook: 0 })
 				// 		.setPin(".top-image")
@@ -454,5 +455,4 @@ $(document).ready(function(){
 
 
 
-  
 

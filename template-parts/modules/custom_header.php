@@ -7,7 +7,7 @@
     <div class="container">
         <div class="row">
 
-            <div class="col-md-3 col-sm-4">
+            <div class="col-md-3 col-sm-4 col-xs-8">
                 <div class="site-logo">
                    <?php
                        if($logo) :
@@ -18,7 +18,7 @@
                     ?>
                 </div>
             </div>
-            <div class="col-md-9 col-sm-8">
+            <div class="col-md-9 col-sm-8 col-xs-4">
                <div class="tl-block">
                    <?php if($cta) {
                                 echo $cta;

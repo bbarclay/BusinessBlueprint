@@ -13,7 +13,7 @@
                 <?php 
                 	   }	
                 if($subheading) { ?>
-                    <p class="aligncenter"><?php echo $subheading; ?></p>
+                    <div><?php echo $subheading; ?></div>
                 <?php } ?>
             </div>
         </div>

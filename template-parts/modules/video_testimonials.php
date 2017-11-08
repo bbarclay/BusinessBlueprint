@@ -1,7 +1,7 @@
    <div id="testimonials" class="testimonials">
         <div class="container">
                 <div class="slick-video">
-                    <?php if( have_rows('video_list') ) : 
+                     <?php if( have_rows('video_list') ) : 
 
                           echo '<div class="row">';
 
@@ -13,9 +13,15 @@
                     ?>
                               <div class="col-xs-6 col-sm-4 col-custom">
                                  <div class="video">
-                                      <?php if($video) {
-                                              echo $video;
-                                        } ?>  
+                                          
+                                      <?php if($video) { 
+
+                                              $image = get_sub_field('image');
+
+                                        ?>
+                                              
+                                           <a href="<?php the_sub_field('video') ?>" class="wistia-popover[height=360,playerColor=005798,width=640]"><img src="<?php echo $image['url'] ?>" alt="Business Blueprint Success Stories" > </a>   
+                                      <?php  } ?>  
                                         <div class="detail">
                                             <?php 
                                                if($name) : ?>
@@ -39,4 +45,5 @@
         </div>
 
     </div>
-    
+    <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/popover-v1.js"></script>
+    <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script>
