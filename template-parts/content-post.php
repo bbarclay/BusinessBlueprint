@@ -1,3 +1,4 @@
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemscope itemprop="http://schema.org/BlogPosting">
     <div class="banner banner-top"><a href="https://52ways.com/?utm_campaign=52W+Free.BB&utm_source=Website" target="_blank"><img src="/wp-content/uploads/2017/05/52_WAYS_Banner_720x100px_DELTA-2.png" alt="52 ways" width="100%" height="auto"/></a></div>
 

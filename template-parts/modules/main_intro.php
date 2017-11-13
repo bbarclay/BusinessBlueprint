@@ -20,3 +20,29 @@
             </div>
         </div>
 </section>
+<script type="text/javascript">
+
+  (function($){
+      $('.main .button__primary').on('click', function(event){
+     console.log('test');
+
+    if (this.hash !== "") {
+
+      event.preventDefault();
+
+
+      var hash = this.hash;
+
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+       
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  })(jQuery);
+</script>
+</script>
