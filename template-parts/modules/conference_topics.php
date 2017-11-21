@@ -80,7 +80,8 @@
                             <div class="lead">
                                
                                 <div class="image right-image">
-                                    <img src="https://businessblueprint.com.au/wp-content/uploads/2015/06/BusinessBlueprintMagazine.jpg" alt="BusinessBlueprintMagazine" width="397" height="561" class="size-full wp-image-9679">
+                                    <h2>Business Blueprint Magazine</h2>
+                                    <p>Grab a copy now!</p>
                                 </div>  
                                 <div class="option-btn">
                                   <a href="https://business-blueprint.s3.amazonaws.com/Magalogs/BB%202017%20Magalog_FINAL_OPTIMIZED_ONLINE.pdf" class="btn btn-orange" target="_blank">Open</a>

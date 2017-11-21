@@ -21,7 +21,9 @@
                         ?>
                             <?php if( $heading ) : ?>
                                  <h2 class="boldH"><?php echo $heading ?></h2>
-
+                                 <?php if( $no_of_item == 1 ) : ?>
+                                      <p class="note">Click on each below inclusion to find out more…</p> 
+                                 <?php endif; ?>
                             <?php endif; 
                             
                                  if( $subheading ) :
