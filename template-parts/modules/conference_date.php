@@ -2,7 +2,7 @@
         <div class="container">
 
               <!-- Display the countdown timer in an element -->
-              <h2>Next Conference</h2>
+              <h2>Upcoming Conference Dates</h2>
               <div id="countdown">
               </div>
 

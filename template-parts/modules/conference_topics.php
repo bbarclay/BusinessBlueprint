@@ -81,12 +81,8 @@
                                
                                 <div class="image right-image">
                                     <h2>Business Blueprint Magazine</h2>
-                                    <p>Grab a copy now!</p>
+                                    <p><a href="https://business-blueprint.s3.amazonaws.com/Magalogs/BB%202017%20Magalog_FINAL_OPTIMIZED_ONLINE.pdf" target="_blank" download>Click here to download</a></p>
                                 </div>  
-                                <div class="option-btn">
-                                  <a href="https://business-blueprint.s3.amazonaws.com/Magalogs/BB%202017%20Magalog_FINAL_OPTIMIZED_ONLINE.pdf" class="btn btn-orange" target="_blank">Open</a>
-                                  <a href="https://business-blueprint.s3.amazonaws.com/Magalogs/BB%202017%20Magalog_FINAL_OPTIMIZED_ONLINE.pdf" class="btn btn-green" target="_blank" download>Download</a>
-                                </div>
                             </div>
                          </div>
 
