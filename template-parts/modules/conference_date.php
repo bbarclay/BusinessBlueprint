@@ -8,6 +8,8 @@
 
 
             <?php 
+
+            $counter = 0;
               if( have_rows('membership_conference_date') ) : 
 
                    while( have_rows('membership_conference_date') ) : the_row();
@@ -23,7 +25,7 @@
                           
                                 echo '<div class="row">';
                                     
-                                    $counter = 0;
+                                    
 
                                    while( have_rows('conference_topic') ) : the_row();
 
