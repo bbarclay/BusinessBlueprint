@@ -78,7 +78,7 @@ add_action( 'wp_print_styles', 'my_deregister_javascript', 9999 );
 
 function my_deregister_javascript() 
  { 
-    if ( is_front_page() ) 
+    if ( is_front_page() || is_page('Program Overview') ) 
       {
         wp_deregister_style( 'genericons' );
         wp_deregister_style( 'speechkit' );
@@ -96,6 +96,7 @@ function my_deregister_javascript()
         wp_deregister_style( 'mrcss' );
         wp_deregister_style( 'jqcss' );
       } 
+
  } 
 
  // REMOVE WP EMOJI

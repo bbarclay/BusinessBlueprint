@@ -10,7 +10,8 @@
             <?php 
 
             $counter = 0;
-              if( have_rows('membership_conference_date') ) : 
+
+            if( have_rows('membership_conference_date') ) : 
 
                    while( have_rows('membership_conference_date') ) : the_row();
 
@@ -198,4 +199,5 @@
 
   </div>
 </div>
+
 
