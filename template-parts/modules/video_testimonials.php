@@ -1,6 +1,6 @@
    <div id="testimonials" class="testimonials">
         <div class="container">
-                <h2>Some of Our Clients</h2> 
+                <h2>Hear From Some of our Clients</h2> 
                 <div class="slick-video">
                      <?php if( have_rows('video_list') ) : 
 
