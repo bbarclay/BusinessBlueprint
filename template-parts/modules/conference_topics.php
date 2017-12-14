@@ -67,35 +67,3 @@
               </div>
         </div>
     </div>
-    <div class="application">
-        <div class="container">
-
-
-             <div class="calendar">
-            
-                     <div class="row">
-
-                        
-                         <div class="col-md-12 col-sm-12 col-xs-12 col-xxs">
-                            <div class="lead">
-                               
-                                <div class="image right-image">
-                                    <h2>Business Blueprint Magazine</h2>
-                                    <p><a href="https://business-blueprint.s3.amazonaws.com/Magalogs/BB%202017%20Magalog_FINAL_OPTIMIZED_ONLINE.pdf" target="_blank" download>Click here to download</a></p>
-                                </div>  
-                            </div>
-                         </div>
-
-                     </div>
-            
-            </div>
-
-        </div>
-    </div>
-    <div class="apply-now">
-      <div class="container"> 
-         <h2>Are you ready to join Australia's #1 Business Education Program?</h2>
-
-         <a href="" class="btn btn-green">Complete Application</a>
-      </div> 
-    </div>
