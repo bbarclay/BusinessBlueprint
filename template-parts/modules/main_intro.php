@@ -20,6 +20,155 @@
             </div>
         </div>
 </section>
+<section class="why-us">
+	<div class="container">
+	 	<div class="slides slick-slides">
+	 		<div class="topic">
+	 			<h3 class="topic__title">Discover the Latest Strategies</h3>
+	 			<div class="topic__description">
+	 				<p>It’s increasingly apparent that the old ways of doing business are failing to deliver the results they once did.</p>
+
+					<p>Faster internet speeds, and the ever-growing progress of social media marketing, digital publishing, outsourcing and online systems have totally transformed the business landscape.</p>
+
+					<p>And it’s these tools and strategies you’ll gain insider insights about at Business Blueprint.</p>
+
+					<p>By learning smart ways to apply them, you will discover how to grow your business with greater ease and simplicity than you thought possible.</p>
+
+					<p>Consider for a moment the example of Borders and Amazon. Once upon a time, Borders was a great business that used a traditional approach to move books into the hands of its customers.</p>
+
+					<p>Amazon, on the other hand, saw the opportunity to be gained by building their business in the online world. Today Borders is out of business, while Amazon continues to dominate and expand.</p>
+
+					<p>Don’t let your business get left behind by failing to adopt the fantastic array of tools that are available to you right now.</p>
+
+					<p>Most are relatively inexpensive – or even free – and it takes very little time to learn how to use them and make a powerful impact.</p>
+
+					<p>Get a competitive advantage by adopting the best and latest tools and strategies – and secure your future success in doing so.</p>
+	 		</div>
+	 	</div>
+	 	<div class="topic">
+	 			<h3 class="topic__title">Know What to do <br>With Our Step by Step Approach</h3>
+	 			<div class="topic__description">
+	 				<p>Have you ever been to a business seminar where you receive lots of big picture, high level information? But when you leave, you have no idea how to actually implement what you’ve learned?</p>
+
+					<p>Well, Business Blueprint is completely different. Each event is jam-packed – not just with the aerial view of where you can head – but also with tons of ‘how to’ information. This means you know exactly what to do to create real and enduring improvements in your business.</p>
+
+					<p>In short, our approach is one of learn, show, do.</p>
+
+					<p>By this we mean you’ll learn about the concept, we’ll show you live examples of it in action, and then give you time to implement it in your own business. We encourage you to bring your laptop to each live conference, so you can start making changes as you go.</p>
+
+					<p>Business Blueprint is full of the nuts and bolts you’ll need. You, along with members of your staff, have direct access to a huge library of 400 step by step strategies.</p>
+
+					<p>This includes a host of practical videos, webinars, audio recordings, templates, checklists and more – so it is tremendously simple for you or someone on your team to get new ideas and processes up and running in your business.</p>
+
+					<p>No one goes as far as Business Blueprint in giving you access to such an extensive library of easy-to-follow resources.</p>
+
+					<p>Many participants have said our resources are so comprehensive they’ll never need to attend another business building event.</p>
+	 		</div>
+	 	</div>
+	 	<div class="topic">
+	 			<h3 class="topic__title">Maintain the Momentum Through Exceptional Support</h3>
+	 			<div class="topic__description">
+	 				<p>Another big difference with Business Blueprint is that you always have access to a real person who can help you with your questions, or if you feel stuck.</p>
+
+					<p>This compares very favourably to other business growth events that are big on the hoopla on the day, but are ‘missing in action’ if you have a question after the event.</p>
+
+					<p>With Business Blueprint, support is just an email or phone call away.</p>
+
+					<p>We have a saying, that if in your business, you spend more than 10 minutes struggling with a concept you’ve learned about at Business Blueprint, reach out to us for help.</p>
+
+					<p>We know that our clients’ success stories are our success stories too.</p>
+
+					<p>That’s why we’re 100% committed to helping you achieve every success of which you’re capable.</p>
+
+					<p>We’re here for you with whatever help you need to create amazing results for you personally, and for your business.</p>
+	 		</div>
+	 	</div>
+	 	<div class="topic">
+	 			<h3 class="topic__title">Get Underway Fast With Done-for-You Systems</h3>
+	 			<div class="topic__description">
+	 				<p>For business owners who feel ground-down by the relentless demands of running their business, there is usually one vital ingredient that’s missing.</p>
+
+					<p>And that’s having good systems in place.</p>
+
+					<p>Having customised, well understood systems make it possible to free yourself from your business. They make it simpler for you to take regular holidays and to work hours that keep you feeling happy and on top of things.</p>
+
+					<p>We’ve invested substantially to develop more than 100 system Blueprints that are common to most businesses. And as a Platinum Member you get access to all of them!</p>
+
+					<p>You and your team can start using them straight away, saving you countless hours in developing them for yourself.</p>
+
+					<p>What’s more, because they’ve been used by hundreds of businesses before you, you know they are tried and tested. You can feel confident they work.</p>
+
+					<p>And did you know, a business that operates successfully without being fully dependent on its owner is worth five times more than one that doesn’t? Good systems are the proven way to break free of the shackles of your business.</p>
+
+					<p>With Business Blueprint, you’ll avoid the time, cost and trouble of developing your own set of systems for your business. There is untold value to be gained in this aspect of Business Blueprint alone.</p>
+	 		</div>
+	 	</div>
+	 	<div class="topic">
+	 			<h3 class="topic__title">Make Real Change Supported by Inbuilt Accountability</h3>
+	 			<div class="topic__description">
+	 				<p>At the end of each of the 4 conferences you’ll attend, you’ll leave with a 90 day action plan that breaks down what you’ve learned into clear, doable steps.</p>
+
+					<p>You’re also seated at a table of 8 people at each event. At it, you’ll commit to complete what you agreed to in your 90 day plan.</p>
+
+					<p>What’s more, you’re paired with an Accountability Partner, with whom you’re encouraged to make contact with, on at least a weekly basis. Your job is to empower each other and to make sure you each stay on track. It’s worth noting the findings of Robert Cialdini, a US psychologist and author who is highly regarded for his theories on influence and persuasion.</p>
+
+					<p>He argues that each of us has a strong desire to be consistent. And his research shows that when you outwardly commit to a goal or action, you are much more likely to complete it.</p>
+
+					<p>We find that members of Business Blueprint are extremely productive in the 90 days that follow each live conference. There is a powerful force at play when you know what you need to do, and have publicly committed to doing it.</p>
+
+					<p>The Business Blueprint program is designed for action – not just talk. By being accountable, you’ll ensure you finish the program having implemented many groundbreaking and meaningful improvements in your business during your first 12 months.</p>
+	 		</div>
+	 	</div>
+
+	 	<div class="topic">
+	 			<h3 class="topic__title">Pull Everything Together With Our Integrated Approach</h3>
+	 			<div class="topic__description">
+	 				<p>Some business programs cover a single or small range of topics you must know about to thrive in today’s business.</p>
+
+					<p>Business Blueprint plays much bigger. It brings together 25 essential business components – everything from business strategy, to sales training, content marketing, outsourcing, e-commerce, finance and cashflow, database setup, search engine optimisation and much more.</p>
+
+					<p>We all know that trying to figure out each of these areas for yourself can burn up a lot of your time and lead to costly missteps.</p>
+
+					<p>But with Business Blueprint, we’ve done the hard work for you. You’ll gain instant access to a complete library of topics, communicated in more than 500 easy-to-follow training videos.</p>
+
+					<p>We not only show you how to implement each in your business to get maximum impact, we also show you how all of the components fit together.</p>
+
+					<p>That way, all of your efforts are co-ordinated, simple and efficient.</p>
+	 		</div>
+	 	</div>
+
+	 	<div class="topic">
+	 			<h3 class="topic__title">Feel Encouraged and Inspired Among a Likeminded Community</h3>
+	 			<div class="topic__description">
+	 				<p>Stanford University completed a study some years ago. It found that you become like the people you regularly spend time with.</p>
+
+					<p>So reflect for a moment. Do you currently have the opportunity to frequently catch up with people who inspire you in your business, and who can provide you with insights and useful connections?</p>
+
+					<p>If not, Business Blueprint is the forum you need.</p>
+
+					<p>Our members constantly comment on the value they receive from connecting with likeminded entrepreneurs – people who are striving to create a better business and a better life. The challenges you face are similar. And it can be lonely and difficult on your own.</p>
+
+					<p>When you come along to a Business Blueprint event, you’ll immediately feel energised by the power in the information you’ll receive – along with the support you’ll gain from others on the same journey.</p>
+
+					<p>Business Blueprint was established more than five years ago. In the years since, we’ve created a community of more than 500 business owners who have taken advantage of the breakthrough ideas offered by the program.</p>
+
+					<p>And they regard themselves as family.</p>
+
+					<p>There is an amazing sense of kinship between members, and a strong willingness to support one another to achieve goals. You’ll find it’s a place where people cheer each other on their wins – no matter how big or small.</p>
+
+					<p>In between each live event, you can give and receive feedback through our private Facebook page.</p>
+
+					<p>In it, you’ll find a steady feed of camaraderie and it provides a great resource where you can bounce ideas off one another, or ask for help.</p>
+
+					<p>In fact, many people have formed valuable joint ventures through the connections they’ve made as part of the Business Blueprint community.</p>
+
+					<p>Being part of this community is a huge asset, and you’ll most likely form friendships you’ll enjoy for many years to come.</p>
+	 		</div>
+	 	</div>
+
+
+	</div>
+</section>
 <script type="text/javascript">
 
   (function($){
@@ -43,6 +192,7 @@
       });
     } // End if
   });
+
   })(jQuery);
 </script>
 </script>

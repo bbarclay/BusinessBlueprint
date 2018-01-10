@@ -402,6 +402,16 @@ $(document).ready(function(){
 			  slidesToShow: 1,
 		});
 
+		 $('.slick-slides').slick({  
+		 	dots: true,  
+		 	infinite: true,  
+		 	speed: 500,  
+		 	cssEase: 'linear', 
+		 	nextArrow: '<i class="fa fa-arrow-right"></i>', 
+		 	prevArrow: '<i class="fa fa-arrow-left"></i>',
+		 	adaptiveHeight: true 
+		 });
+
 		 $('.lists').slick({  
 		 	dots: true,  
 		 	infinite: true,  
@@ -428,6 +438,7 @@ $(document).ready(function(){
 			  infinite: true,
 			  speed: 1000,
 			  autoplay: false,
+			  adaptiveHeight: true,
 			  arrows: true,
 			  slidesToShow: 1,
 			  nextArrow: '<i class="arrow-next"></i>', 
