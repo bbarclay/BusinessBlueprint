@@ -20,7 +20,7 @@
             </div>
         </div>
 </section>
-<section class="why-us">
+<!-- <section class="why-us">
 	<div class="container">
 	 	<div class="slides slick-slides">
 	 		<div class="topic">
@@ -168,7 +168,7 @@
 
 
 	</div>
-</section>
+</section> -->
 <script type="text/javascript">
 
   (function($){
