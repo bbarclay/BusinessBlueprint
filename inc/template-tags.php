@@ -17,7 +17,10 @@ function zero_body_classes( $classes ) {
     } 
     else if ( is_page('apply-now') ) {
         $classes[] = 'apply-page';
-    }   
+    } 
+    else if ( is_page('book-bundles') ) {
+        $classes[] = 'woocommerce';
+    }  
     else {
         $classes[] = 'sub-page';
     }
