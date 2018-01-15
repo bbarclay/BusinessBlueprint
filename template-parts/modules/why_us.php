@@ -6,7 +6,7 @@
 
 <section class="why-us">
    	<div class="container">
-	 	<div class="slides slick-slides">
+	 	<div class="slides rolling">
 	 	      <?php 
 	 	      	if( have_rows('items') ) {
 
