@@ -438,9 +438,9 @@ $(document).ready(function(){
 			  infinite: true,
 			  speed: 1000,
 			  autoplay: false,
-			  adaptiveHeight: true,
 			  arrows: true,
 			  slidesToShow: 1,
+			  adaptiveHeight: true,
 			  nextArrow: '<i class="arrow-next"></i>', 
 		 	  prevArrow: '<i class="arrow-prev"></i>'
 		});

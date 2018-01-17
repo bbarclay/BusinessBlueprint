@@ -29,6 +29,12 @@
          <h2><?php echo get_sub_field('main_text') ?></h2>
         <?php } ?> 
 
-         <a href="<?php echo get_sub_field('application_link') ?>" class="btn btn-green" target="_blank" download>Complete Application</a>
+         <div class="hidden-xs">
+              <a href="<?php echo get_sub_field('application_link') ?>" class="btn btn-green" target="_blank" download>Complete Application</a>
+         </div>
+         <div class="hidden-xs">
+              <a href="<?php echo get_sub_field('application_link') ?>" class="btn btn-green" target="_blank">Complete Application</a>
+         </div>
+        
       </div> 
     </div>
