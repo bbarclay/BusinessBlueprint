@@ -56,7 +56,7 @@
                               echo '<ul>';
                               while(have_rows('downloads')) : the_row();
                   ?>
-                             <li><a href="<?php echo get_sub_field('download_link') ?>" target="_blank" download><?php echo get_sub_field('svg') ?></a></li>
+                             <li><a href="<?php echo get_sub_field('download_link') ?>" target="_blank"><?php echo get_sub_field('svg') ?></a></li>
 
                   <?php
                               endwhile;
