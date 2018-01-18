@@ -6,6 +6,7 @@
 
 <section class="why-us">
    	<div class="container">
+   	 	<h3>7 Reasons To Join Business Blueprint</h3>
 	 	<div class="slides rolling">
 	 	      <?php 
 	 	      	if( have_rows('items') ) {
