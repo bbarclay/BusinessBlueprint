@@ -12,7 +12,12 @@
                                
                                 <div class="image right-image">
                                     <h2>Business Blueprint Magazine</h2>
-                                    <p><a href="<?php echo get_sub_field('magazine_link') ?>" target="_blank" download>Click here to download</a></p>
+                                        <div class="hidden-xs">
+                                            <p><a href="<?php echo get_sub_field('magazine_link') ?>" target="_blank" download>Click here to download</a></p>
+                                        </div>
+                                        <div class="visible-xs">
+                                            <p><a href="<?php echo get_sub_field('magazine_link') ?>" target="_blank">Click here to download</a></p>
+                                        </div>
                                 </div>  
                             </div>
                          </div>

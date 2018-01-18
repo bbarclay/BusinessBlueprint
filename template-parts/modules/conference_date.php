@@ -191,7 +191,10 @@
                   <?php if($dl) : ?>
                   <div class="option-btn">
                     <a href="<?php echo $dl;?>" class="btn btn-orange" target="_blank">Open</a>
-                    <a href="<?php echo $dl; ?>" class="btn btn-green" target="_blank" download>Download</a>
+                    <a href="<?php echo $dl; ?>" class="btn btn-green hidden-xs" target="_blank" download>Download</a>
+                    <div class="visible-xs">
+                        <a href="<?php echo $dl; ?>" class="btn btn-green" target="_blank" >Download</a>
+                    </div>
                   </div>
                 <?php endif; ?>
             </div>
