@@ -32,7 +32,7 @@
          <div class="hidden-xs">
               <a href="<?php echo get_sub_field('application_link') ?>" class="btn btn-green" target="_blank" download>Complete Application</a>
          </div>
-         <div class="hidden-xs">
+         <div class="visible-xs">
               <a href="<?php echo get_sub_field('application_link') ?>" class="btn btn-green" target="_blank">Complete Application</a>
          </div>
         
