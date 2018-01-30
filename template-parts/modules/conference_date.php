@@ -24,7 +24,7 @@
                          <?php if( have_rows('conference_topic') ) : 
 
                           
-                                echo '<div class="row">';
+                                  echo '<div class="row">';
                                     
                                     
 
@@ -97,10 +97,11 @@
 
                                                     echo '<div class="col-md-3 col-sm-6 col-xs-6 col-custom">';
 
-                                                             $title = get_sub_field('title');
-                                                             if($title) { 
-                                                                      echo '<h3>' . $title . '</h3>'; 
-                                                              }
+                                                                    $title = get_sub_field('title');
+
+                                                                    if($title) { 
+                                                                        echo '<h3>' . $title . '</h3>'; 
+                                                                    }
 
 
                                                                     if( have_rows('date') ) {
@@ -114,9 +115,7 @@
                                                                             $event_date = get_sub_field('event_date');
 
                                                                           
-                                                                
-
-
+                                                              
 
                                                                             if($event_date) { 
 
@@ -143,7 +142,11 @@
                                                                         } // END WHILE
 
                                                                       echo '</ul>';
-                                                                    }  // END IF   
+                                                                    }  // END IF
+                                                                else {
+                                                                  echo '<p class="no-date">TBA</p>';
+                                                                }
+
                                  
 
                                                                 echo get_sub_field('button');
@@ -159,6 +162,7 @@
                                       endif;  // END OF DUE DATE 
 
                                     endwhile;  
+
                                 echo '</div>';  
                                 
                               endif; // END OF CONFERENCE TOPIC    
