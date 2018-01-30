@@ -2,7 +2,7 @@
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemscope itemprop="http://schema.org/BlogPosting">
 		<?php if( has_post_thumbnail() ) : ?>
 			<a href="<?php the_permalink(); ?>" rel="bookmark">
-				<?php the_post_thumbnail( 'post-thumbnail', array( 'class' => 'aligncenter', 'itemprop' => 'image' ) ); ?>
+				<?php the_post_thumbnail( '', array( 'class' => 'aligncenter', 'itemprop' => 'image' ) ); ?>
 			</a>
 		<?php endif; ?>
 
