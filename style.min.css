@@ -2893,7 +2893,7 @@ button.faq__q:focus{border-color:#7ac143;box-shadow:0 2px 6px rgba(0,0,0,0.15)}
 .search #content,.custom-blog-page #content{margin-top:20px}
 .search.search-results .wrapper,.custom-blog-page.search-results .wrapper{background-color:#f6f6f7}
 .search .grid-view,.custom-blog-page .grid-view{position:relative;width:auto;height:100%}
-.search article,.custom-blog-page article{padding:1em;background:#fff;box-shadow:0 5px 10px #e0dddd;width:48%}
+.search article,.custom-blog-page article{padding:1em;background:#fff;box-shadow:0 5px 10px #e0dddd;width:100%}
 .search article .entry__title,.custom-blog-page article .entry__title{text-transform:initial;color:#00254c}
 .search article .entry__summary a,.custom-blog-page article .entry__summary a{color:#00254c}
 .error404 .entry .search-form{width:100%;max-width:500px;position:relative}

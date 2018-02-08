@@ -23,9 +23,9 @@
 							<div class="form-wrap">
 						    <?php get_search_form() ?>
 						    </div>
-						    <div class="gridbox">
-						    	<div class="grid-sizer"></div>
-						    	<div class="gutter-sizer"></div>	
+						    <div class="gridboxes">
+						    	<!-- <div class="grid-sizer"></div>
+						    	<div class="gutter-sizer"></div>	 -->
 								<?php get_template_part( 'template-parts/loop' ); ?>
 							</div>
 								<?php
