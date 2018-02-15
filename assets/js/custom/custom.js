@@ -112,21 +112,6 @@ $(document).ready(function(){
    program_view();
 
 
-	function submit_captcha() {
-
-		$('#multisteps-form input[type="submit"]').on('click', function() {
-		
-			if (grecaptcha.getResponse() == ""){
-
-				 
-			   $('.g-recaptcha').append('<span class="text text-danger pull-left">Captcha Verification Failed</span>');
-			   return false;
-
-			} 
-		});
-
-	}					
-	submit_captcha();
 
 	function contact_captcha() {
 
@@ -154,6 +139,7 @@ $(document).ready(function(){
 
 
 			$(".next").click( function(){
+
 				if(animating) return false;
 				animating = true; 
 
@@ -269,6 +255,27 @@ $(document).ready(function(){
 
     }
     multistep_form();
+
+    	function submit_captcha() {
+
+		$('#multisteps-form input[type="submit"]').on('click', function() {
+		
+			if (grecaptcha.getResponse() == ""){
+
+				var recaptcha = $('.g-recaptcha').find('.text-danger');
+				 
+				 if(recaptcha.length < 1) {
+				 	
+				 	$('.g-recaptcha').append('<span class="text text-danger pull-left">Captcha Verification Failed</span>');
+				 }
+			   
+			   return false;
+
+			} 
+		});
+
+	}					
+	submit_captcha();
 
 
   function slide_tab() {
