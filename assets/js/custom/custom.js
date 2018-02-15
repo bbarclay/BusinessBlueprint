@@ -142,11 +142,14 @@ $(document).ready(function(){
 				 if(recaptcha.length < 1) {
 				 	
 				 	$('.g-recaptcha').append('<span class="text text-danger pull-left">Captcha Verification Failed</span>');
-				 	
+				 	return false;	
+
 				 }
-	
 
 			} 
+			else {
+				 	return true;
+			}
 
 
 		});
