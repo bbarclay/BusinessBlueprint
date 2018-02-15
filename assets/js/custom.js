@@ -121,14 +121,38 @@ $(document).ready(function(){
 
 				 
 			   $('#contactForm .captcha-status').html('<span class="text text-danger pull-left">Captcha Verification Failed</span>');
-			   return false;
-
+			   //return false;
+			   console.log('test');
 			} 
 
 		});
 
 	}					
 	contact_captcha();
+
+
+    function submit_captcha() {
+
+		$('#multisteps-form input[type="submit"]').on('click', function() {
+		
+			if (grecaptcha.getResponse() == "") {
+
+				var recaptcha = $('.g-recaptcha').find('.text-danger');
+				 
+				 if(recaptcha.length < 1) {
+				 	
+				 	$('.g-recaptcha').append('<span class="text text-danger pull-left">Captcha Verification Failed</span>');
+				 	
+				 }
+	
+
+			} 
+
+
+		});
+
+	}					
+	submit_captcha();
 
     function multistep_form() {
 
@@ -147,6 +171,8 @@ $(document).ready(function(){
 
 				        input = $(this).closest('fieldset').find('.moonray-form-input');
 						
+
+
 						input.each( function( index ) {
 
 				
@@ -154,11 +180,13 @@ $(document).ready(function(){
 
 							  	 $(this).addClass('moonray-form-state-error');
 
+							  	 //
 							  	 stop = true;
 
-			
+								 console.log(stop);
 							  }	
 							  else {
+
 
 							  	 $(this).removeClass('moonray-form-state-error');
 
@@ -206,7 +234,7 @@ $(document).ready(function(){
 					    }
 					    else {
 					    	animating = false;
-					    	console.log(animating);
+					    	console.log('animating ' + animating);
 
 					    }
 				
@@ -216,6 +244,7 @@ $(document).ready(function(){
 			});
 
 			$(".previous").click(function(){
+
 				if(animating) return false;
 				animating = true;
 				
@@ -256,26 +285,6 @@ $(document).ready(function(){
     }
     multistep_form();
 
-    	function submit_captcha() {
-
-		$('#multisteps-form input[type="submit"]').on('click', function() {
-		
-			if (grecaptcha.getResponse() == ""){
-
-				var recaptcha = $('.g-recaptcha').find('.text-danger');
-				 
-				 if(recaptcha.length < 1) {
-				 	
-				 	$('.g-recaptcha').append('<span class="text text-danger pull-left">Captcha Verification Failed</span>');
-				 }
-			   
-			   return false;
-
-			} 
-		});
-
-	}					
-	submit_captcha();
 
 
   function slide_tab() {
