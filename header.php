@@ -19,9 +19,9 @@
 		<div class="site-header" itemscope itemprop="http://schema.org/WPHeader">
 			 <div class="container">
 			 	  <div class="row">
-			 	  	  <div class="col-custom col-xs-8 col-sm-4 col-md-4">
+			 	  	  <div class="col-custom col-xs-8 col-sm-3 col-md-3">
 			 	  	    <div class="site-logo">
-			 	  	  		<a href="<?php bloginfo('siteurl') ?>"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/bb-logo.svg" alt="Logo" /></a>
+			 	  	  		<a href="<?php bloginfo('siteurl') ?>"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/bb-logo.svg" alt="Logo" width="100%" /></a>
 			 	  	  	</div>
 			 	  	  </div>
 			 	  	  <div class="col-xs-4 visible-xs">
@@ -37,7 +37,7 @@
 									    </div>
 								</nav>
 			 	  	  </div>
-			 	  	  <div class="col-xs-12 col-sm-8 col-md-8">
+			 	  	  <div class="col-xs-12 col-sm-9 col-md-9">
 
 			 	  	  	 <nav class="navbar navbar-default mobile-menu" role="navigation">
 			 	  	  	 	<?php

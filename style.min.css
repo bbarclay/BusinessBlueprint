@@ -2207,8 +2207,9 @@ a.post-edit-link:hover{color:#f15d22}
 #top-header{position:relative;width:100%}
 #top-header .site-header{padding:10px 0;box-shadow:none;background-color:#fff;z-index:5}
 #top-header .site-header .site-logo{padding:0;margin:.5em 0 0 0 !important}
-#top-header .site-header .site-logo img{max-width:250px;height:100%}
+#top-header .site-header .site-logo img{width:100%;max-width:250px;height:100%}
 #top-header .site-header .site-logo a{display:block}
+#top-header .site-header .site-logo and maxv(991){margin:1em 0 0 0 !important}
 #top-header .site-header .navbar{margin-bottom:0;text-align:right;background-color:transparent !important;box-shadow:none}
 #top-header .site-header .navbar.navbar-default{border-color:transparent}
 #top-header .site-header .navbar.navbar-default .navbar-collapse{padding-right:0;padding-left:0;border-color:transparent}
