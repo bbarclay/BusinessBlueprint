@@ -19,7 +19,11 @@ require_once( get_stylesheet_directory() . '/inc/template-tags.php');
 require_once( get_stylesheet_directory() . '/inc/customizer.php');
 require_once( get_stylesheet_directory() . '/inc/bootstrap-navwalker.php');
 
-
+function add_query_vars_filter( $vars ){
+  $vars[] = "email";
+  return $vars;
+}
+add_filter( 'query_vars', 'add_query_vars_filter' );
 
 function add_login_logout_register_menu( $items, $args ) {
  if ( $args->theme_location != 'navbar' ) {
