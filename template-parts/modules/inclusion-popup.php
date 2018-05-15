@@ -1,37 +1,35 @@
 <section class="inclusions" id="inc-first">
-        <div class="container">
-            <?php
-               $no_of_item = 0;
+   <div class="container">
+
+            <?php  $no_of_item = 0;
 
                if( have_rows('inclusions') ) : 
 
-                      
+                    while( have_rows('inclusions') ) : the_row();
 
-                       while( have_rows('inclusions') ) : the_row();
-
-                                    $heading = get_sub_field('heading');
-                                    $subheading = get_sub_field('subheading');
+                        $heading = get_sub_field('heading');
+                        $subheading = get_sub_field('subheading');
 
 
-                                    $no_of_item++;
-                                    $item =  ($no_of_item == 2) ?  'grid-4col' : 'grid-3col';
+                        $no_of_item++;
+                        $item =  ($no_of_item == 2) ?  'grid-4col' : 'grid-3col';
 
-                             echo '<div class="inclusion-wrapper ' .  $item . '">';         
+                        echo '<div class="inclusion-wrapper ' .  $item . '">';          ?>
 
-                        ?>
-                            <?php if( $heading ) : ?>
-                                 <h2 class="boldH"><?php echo $heading ?></h2>
-                                 <?php if( $no_of_item == 1 ) : ?>
-                                      <p class="note">Click on each below inclusion to find out more…</p> 
-                                 <?php endif; ?>
-                            <?php endif; 
-                            
-                                 if( $subheading ) :
-                            ?>    
-                                   <p class="textcenter"><?php echo $subheading; ?></p>
-                            <?php 
-                                 endif;  
+                                <?php if( $heading ) : ?>
 
+                                     <h2 class="boldH"><?php echo $heading ?></h2>
+                                     <?php if( $no_of_item == 1 ) : ?>
+                                          <p class="note">Click on each below inclusion to find out more…</p> 
+                                     <?php endif; ?>
+
+                                <?php endif; 
+                                
+                                     if( $subheading ) :   ?>    
+                                       <p class="textcenter"><?php echo $subheading; ?></p>
+                                <?php 
+                                     endif;  
+ 
                                 
 
                                  if( have_rows('items') ) :
@@ -83,7 +81,7 @@
 
                while( have_rows('inclusions') ) : the_row();
 
-
+                 
 
                  if( have_rows('items') ) :
 
@@ -95,7 +93,7 @@
 
                             $count++;
 
-
+                            $svg = get_sub_field('svg');
                             $title = get_sub_field('title');
                             $description = get_sub_field('description');
 
@@ -104,7 +102,7 @@
 
                                   <div class="modal fade" id="Modal-<?php the_sub_field('unique_id'); ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                     <div class="popup">
-                                            <h2><?php echo $title ?></h2>
+                                            <h2><?php if($svg) {  echo '<i class="' . $svg . ' fa-lg"></i>'; }  ?> <?php echo  $title ?></h2>
                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 
                                             <div class="scrolling">

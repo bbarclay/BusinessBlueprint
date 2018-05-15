@@ -30,16 +30,24 @@
     </div>
     <div class="apply-now">
       <div class="container"> 
-        <?php if(  get_sub_field('main_text') ) { ?>
-         <h2><?php echo get_sub_field('main_text') ?></h2>
-        <?php } ?> 
-
-         <div class="hidden-xs">
-              <a href="<?php echo get_sub_field('application_link') ?>" class="btn btn-green" target="_blank" download>Complete Application</a>
-         </div>
-         <div class="visible-xs">
-              <a href="<?php echo get_sub_field('application_link') ?>" class="btn btn-green" target="_blank">Complete Application</a>
-         </div>
+        <div class="row">
+            <div class="col-sm-9 col-xs-8">
+                <?php if(  get_sub_field('main_text') ) { ?>
+                     <h3><?php echo get_sub_field('main_text') ?></h3>
+                <?php } ?> 
+            </div>
+            <div class="col-sm-3 col-xs-4">
+                
+                 <div class="hidden-xs">
+                      <a href="<?php echo get_sub_field('application_link') ?>" class="btn btn-green" target="_blank" download>Get Started</a>
+                 </div>
+                 <div class="visible-xs">
+                      <a href="<?php echo get_sub_field('application_link') ?>" class="btn btn-green" target="_blank">Get Started</a>
+                 </div>
         
+            </div>
+        </div>
+
+
       </div> 
     </div>

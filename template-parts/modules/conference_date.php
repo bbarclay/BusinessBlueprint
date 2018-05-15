@@ -22,29 +22,26 @@
                      <h2 class="bolder"><?php echo $heading; ?></h2>
 
                          <?php if( have_rows('conference_topic') ) : 
-
                           
-                                  echo '<div class="row">';
-                                    
-                                    
+                                echo '<div class="row">';
+                                  
+                                  while( have_rows('conference_topic') ) : the_row();
 
-                                   while( have_rows('conference_topic') ) : the_row();
+                                    $year = strtotime(get_sub_field('due_date'));
 
-                                   
-        
-                                   if( strtotime(get_sub_field('due_date')) > strtotime(date('Y-m-d H:i:s') ) ) :
+                                    $is_active_date = false;
+
+                                   if( strtotime(get_sub_field('due_date')) > strtotime(date('Y-m-d H:i:s') ) ) {
                                       $counter++;
+                                      $is_active_date = true;
 
                                         //add countdown for the first date
                                         if($counter == 1) {
 
                                            $due_time =  get_sub_field('due_date');
                                             ?>
-
                                                   <script>
                                                         // Set the date we're counting down to
-
-                                                   
 
                                                               //var countDownDate = new Date("Jan 18, 2018 09:00:00").getTime();
 
@@ -88,49 +85,31 @@
 
                                             <?php
                                         }
+                                    }    
+                                       
 
-                                        if( have_rows('topics') ) : 
+                                        if( have_rows('topics') ) { 
 
                                                 while( have_rows('topics') ) : the_row();
 
-                                                    
-
                                                     echo '<div class="col-md-3 col-sm-6 col-xs-6 col-custom">';
 
-                                                                    $title = get_sub_field('title');
+                                                              $title = get_sub_field('title');
 
-                                                                    if($title) { 
-                                                                        echo '<h3>' . $title . '</h3>'; 
-                                                                    }
-
-
-                                                                    if( have_rows('date') ) {
+                                                               if($title) { echo '<h3>' . $title . '</h3>'; }
 
                                                                       echo '<ul class="calendar-event grid-4">';
+                                                                      
 
-                                                                      while( have_rows('date') )  {
-                                                                            
-                                                                            the_row();
+                                                                      while( have_rows('date') )  {  the_row(); $event_date = get_sub_field('event_date');
 
-                                                                            $event_date = get_sub_field('event_date');
-
-                                                                          
-                                                              
-
-                                                                            if($event_date) { 
-
-
+                                                                           if($event_date) { 
 
                                                                                 $month = date("M", strtotime($event_date));
-                                                                                $day = date("jS", strtotime($event_date));
-
-
-                                                                                ?>
-
-
+                                                                                $day = date("jS", strtotime($event_date));   ?>
                                                                                          <li>
-                                                                                          <div class="date">
-                                                                                             <span class="month"><?php echo $month ?></span><span class="day"><?php echo $day; ?></span>
+                                                                                          <div class="date <?php echo ($is_active_date == false) ? 'tbd' : ''; ?>">
+                                                                                             <span class="month"><?php echo $month ?></span><span class="day"><?php echo ( $is_active_date === true) ? $day : 'TBA'; ?></span>
                                                                                           </div> 
                                                                                         </li>
 
@@ -139,40 +118,38 @@
                                                                               }
                           
 
-                                                                        } // END WHILE
+                                                                        } 
 
                                                                       echo '</ul>';
-                                                                    }  // END IF
-                                                                else {
-                                                                  echo '<p class="no-date">TBA</p>';
+                                                                if(( $is_active_date === true) ) {
+
+                                        
+
+                                                                  echo '<div class="year">' . date( 'Y',  $year  ) . '</div>';
+                                                                  echo get_sub_field('button');
                                                                 }
-
-                                 
-
-                                                                echo get_sub_field('button');
+                                                                else {
+                                                                      echo '<div class="year">' . date( 'Y', strtotime( "+1 year", $year ) ) . '</div>';
+                                                                }
                                                       echo '</div>'; 
                                                 endwhile;
-
-                                        endif;// END OF TOPICS ?>
-
-                      
-
-                                      <?php   
+                                        } 
+                                   
     
-                                      endif;  // END OF DUE DATE 
+                                    
 
                                     endwhile;  
 
                                 echo '</div>';  
                                 
-                              endif; // END OF CONFERENCE TOPIC    
+                              endif; 
                         ?> 
             
                   </div><!-- end of date container -->      
             <?php       
                    
                    endwhile;
-              endif; //membership_conference_dates loop
+              endif; 
             ?>
        
             <div class="lead c-download">
