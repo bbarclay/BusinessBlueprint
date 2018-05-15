@@ -1,5 +1,5 @@
 <section class="inclusions" id="inc-first">
-   <div class="container">
+
 
             <?php  $no_of_item = 0;
 
@@ -16,21 +16,34 @@
 
                         echo '<div class="inclusion-wrapper ' .  $item . '">';          ?>
 
-                                <?php if( $heading ) : ?>
+                                <div class="container">
 
-                                     <h2 class="boldH"><?php echo $heading ?></h2>
-                                     <?php if( $no_of_item == 1 ) : ?>
-                                          <p class="note">Click on each below inclusion to find out more…</p> 
-                                     <?php endif; ?>
+                                <?php if( $heading ) : $image = get_sub_field('image');
 
-                                <?php endif; 
+                                      echo '<div class="inclusions__header">';
+                                          
+
+                                                  echo '<div>';
+
+                                                  echo '<img src="' . $image['url'] .'" title="'. $image['title'] .'"  />';
+                                             ?>
+
+                                                   <h2 class="boldH"><?php echo $heading ?></h2>
+                                                   <?php if( $no_of_item == 1 ) : ?>
+                                                        <p class="note">Click on each below inclusion to find out more…</p>
+                                                   <?php endif;
+
+                                                   if( $subheading ) :   ?>    
+                                                       <p class="textcenter"><?php echo $subheading; ?></p>
+
+                                             <?php endif;       
+                                                  echo '</div>';
+                                    echo '</div>';            
+                               
+                               endif; 
                                 
-                                     if( $subheading ) :   ?>    
-                                       <p class="textcenter"><?php echo $subheading; ?></p>
-                                <?php 
-                                     endif;  
  
-                                
+                             
 
                                  if( have_rows('items') ) :
                                     
@@ -70,11 +83,12 @@
 
                                  endif; ?>
                         <?php 
+                                 echo '</div>'; 
                               echo '</div>';
                        endwhile; 
                   endif; ?>
 
-        </div>
+
     </section>
 
     <?php if( have_rows('inclusions') ) : 
@@ -125,4 +139,3 @@
 
          endif; ?>
    
-
