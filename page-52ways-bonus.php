@@ -31,49 +31,53 @@ get_header();
          
            <?php 
 
-           if( have_rows('books') ) : ?>
+           if( !post_password_required( $post )): 
 
-              <div class="book-summaries">
+               if( have_rows('books') ) : ?>
 
-              <?php
+                  <div class="book-summaries">
 
-                while( have_rows('books') ) : the_row(); 
+                  <?php
 
-              ?>
-             
+                    while( have_rows('books') ) : the_row(); 
 
-                  <div class="book">
-                    <div class="cover">
-                        <?php $image = get_sub_field('image');
-                              $size  = 'full';
+                  ?>
+                 
 
-                              if( $image ) {
+                      <div class="book">
+                        <div class="cover">
+                            <?php $image = get_sub_field('image');
+                                  $size  = 'full';
 
-                                 echo  wp_get_attachment_image($image['id'], $size);
-                              }
-                         ?>
-                    </div>
-                    <div class="info">
-                        <div>
-                          <?php if( get_sub_field('title') ) : ?>
-                            <h3 class="title"><?php echo get_sub_field('title') ?></h3>
-                          <?php endif; ?>  
-                          <?php if( get_sub_field('author') ) : ?>
-                            <h4 class="author"><?php echo get_sub_field('author') ?></h4>
-                          <?php endif; ?>  
-                          <?php if( get_sub_field('download_link') ) : ?>
-                            <a href="<?php echo get_sub_field('download_link'); ?>" class="download-link" target="blank" download>Download</a>
-                          <?php endif; ?>  
-                          
+                                  if( $image ) {
+
+                                     echo  wp_get_attachment_image($image['id'], $size);
+                                  }
+                             ?>
                         </div>
-                    </div>
-                  </div>
+                        <div class="info">
+                            <div>
+                              <?php if( get_sub_field('title') ) : ?>
+                                <h3 class="title"><?php echo get_sub_field('title') ?></h3>
+                              <?php endif; ?>  
+                              <?php if( get_sub_field('author') ) : ?>
+                                <h4 class="author"><?php echo get_sub_field('author') ?></h4>
+                              <?php endif; ?>  
+                              <?php if( get_sub_field('download_link') ) : ?>
+                                <a href="<?php echo get_sub_field('download_link'); ?>" class="download-link" target="blank" download>Download</a>
+                              <?php endif; ?>  
+                              
+                            </div>
+                        </div>
+                      </div>
 
+                    <?php
+                    endwhile;
+                    ?>
+                </div>  
                 <?php
-                endwhile;
-                ?>
-            </div>  
-            <?php
+                endif;
+
             endif;
             ?>    
 
