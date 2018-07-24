@@ -152,32 +152,52 @@
               endif; 
             ?>
        
-            <div class="lead c-download">
-                 <?php 
-
+            <div class="lead">
+              <div class="row">
+                <div class="col-sm-6">
+                  <?php  
                     $img = get_sub_field('calendar_image');
-                    $dl = get_sub_field('image_download_link');
+                    $dl = get_sub_field('image_download_link'); ?>
 
-                 if($img) : ?>
+                    <?php   if( $img ) : ?>
+                              <div class="image">
+                                 <img src="<?php echo $img['url'] ?>" alt="<?php echo $img['title'] ?>" />
+                              </div>
+                     <?php  endif;  ?>
 
+                      <?php if($dl) : ?>
+                      <div class="option-btn">
+                        <a href="<?php echo $dl;?>" class="btn btn-orange" target="_blank">Open</a>
+                        <a href="<?php echo $dl; ?>" class="btn btn-green hidden-xs" target="_blank" download>Download</a>
+                        <div class="visible-xs">
+                            <a href="<?php echo $dl; ?>" class="btn btn-green" target="_blank" >Download</a>
+                        </div>
+                      </div>
+                    <?php endif; ?>
+                </div>
+                <div class="col-sm-6">
+                  <?php  
+                    $img2 = get_sub_field('calendar_image_2');
+                    $dl2 = get_sub_field('image_download_link_2'); ?>
 
-                  <div class="image">
-                     <img src="<?php echo $img['url'] ?>" alt="<?php echo $img['title'] ?>" />
-                  </div>
-                 <?php 
- 
-                  endif;
-                 ?>
+                <?php   if( $img2 ) : ?>
+                          <div class="image">
+                             <img src="<?php echo $img2['url'] ?>" alt="<?php echo $img2['title'] ?>" />
+                          </div>
+                 <?php  endif;  ?>
 
-                  <?php if($dl) : ?>
+                  <?php if($dl2) : ?>
                   <div class="option-btn">
-                    <a href="<?php echo $dl;?>" class="btn btn-orange" target="_blank">Open</a>
-                    <a href="<?php echo $dl; ?>" class="btn btn-green hidden-xs" target="_blank" download>Download</a>
+                    <a href="<?php echo $dl2;?>" class="btn btn-orange" target="_blank">Open</a>
+                    <a href="<?php echo $dl2; ?>" class="btn btn-green hidden-xs" target="_blank" download>Download</a>
                     <div class="visible-xs">
-                        <a href="<?php echo $dl; ?>" class="btn btn-green" target="_blank" >Download</a>
+                        <a href="<?php echo $dl2; ?>" class="btn btn-green" target="_blank" >Download</a>
                     </div>
                   </div>
                 <?php endif; ?>
+                </div>
+              </div>
+                 
             </div>
            
 
