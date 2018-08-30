@@ -33,6 +33,8 @@ get_header(); ?>
 										<?php if( get_sub_field( 'embed_code' ) ) : ?>
 											<div class="video-gallery__item  video-gallery__item--thumbnail  <?php echo $classes; ?>">
 												<?php the_sub_field( 'embed_code' ); ?>
+												<?php echo ( get_sub_field('name') ) ? '<h4>' . get_sub_field('name') . '</h4>': ''; ?>
+												<?php echo ( get_sub_field('title') ) ? '<p>' . get_sub_field('title') . '</p>': ''; ?>
 											</div>
 										<?php else : ?>
 											<div class="video-gallery__item  <?php echo $classes; ?>">
