@@ -273,17 +273,17 @@ gulp.task( 'browser-sync', function() {
   * This task will run only once, if you want to run it
   * again, do it with the command `gulp images`.
   */
- gulp.task( 'images', function() {
-  gulp.src( imagesSRC )
-    .pipe( imagemin( {
-          progressive: true,
-          optimizationLevel: 3, // 0-7 low-high
-          interlaced: true,
-          svgoPlugins: [{removeViewBox: false}]
-        } ) )
-    .pipe(gulp.dest( imagesDestination ))
-    .pipe( notify( { message: 'TASK: "images" Completed! 💯', onLast: true } ) );
- });
+ // gulp.task( 'images', function() {
+ //  gulp.src( imagesSRC )
+ //    .pipe( imagemin( {
+ //          progressive: true,
+ //          optimizationLevel: 3, // 0-7 low-high
+ //          interlaced: true,
+ //          svgoPlugins: [{removeViewBox: false}]
+ //        } ) )
+ //    .pipe(gulp.dest( imagesDestination ))
+ //    .pipe( notify( { message: 'TASK: "images" Completed! 💯', onLast: true } ) );
+ // });
 
 
  /**
@@ -317,7 +317,7 @@ gulp.task( 'browser-sync', function() {
   *
   * Watches for file changes and runs specific tasks.
   */
- gulp.task( 'default', ['styles', 'vendorsJs', 'customJS', 'images', 'browser-sync'], function () {
+ gulp.task( 'default', ['styles', 'vendorsJs', 'customJS', 'browser-sync'], function () {
   gulp.watch( projectPHPWatchFiles, reload ); // Reload on PHP file changes.
   gulp.watch( styleWatchFiles, [ 'styles' ] ); // Reload on SCSS file changes.
   gulp.watch( vendorJSWatchFiles, [ 'vendorsJs', reload ] ); // Reload on vendorsJs file changes.
